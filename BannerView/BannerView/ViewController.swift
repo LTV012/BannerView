@@ -27,6 +27,10 @@ class ViewController: UIViewController {
         model3.imgUrl = "http://img07.tooopen.com/images/20171024/tooopen_sy_227083791981.jpg"
         bannerV.dataArr = Array(arrayLiteral: model1,model2,model3)
         
+        bannerV.bannerViewCallBack = { index in
+            print("\(index)")
+        }
+        
         view.addSubview(bannerV)
     }
  
